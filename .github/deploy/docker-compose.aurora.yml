@@ -10,7 +10,7 @@ services:
       - bridge
 
   driver:
-    image: "ghcr.io/atanasovski-xyz/led-clock-backend-driver:${IMAGE_TAG:-latest}"
+    image: "ghcr.io/danielatanasovski/led-clock-backend-driver:0.1.2"
     container_name: led-driver
     hostname: led-driver
     ports: 
