@@ -53,7 +53,7 @@ jobs:
       # Extract metadata (tags, labels) for Driver image
       - name: Extract metadata (tags, labels) for Driver image
         id: driver-meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: ${{ env.REGISTRY }}/${{ env.DRIVER_IMAGE_NAME }}
           tags: |
@@ -71,7 +71,7 @@ jobs:
       # Extract metadata (tags, labels) for Server image
       - name: Extract metadata (tags, labels) for Server image
         id: server-meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: ${{ env.REGISTRY }}/${{ env.SERVER_IMAGE_NAME }}
           tags: |
@@ -138,7 +138,7 @@ jobs:
       # Extract metadata (tags, labels) for Driver image
       - name: Extract metadata (tags, labels) for Driver image
         id: driver-meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: ${{ env.REGISTRY }}/${{ env.DRIVER_IMAGE_NAME }}
           tags: |
@@ -156,7 +156,7 @@ jobs:
       # Extract metadata (tags, labels) for Server image
       - name: Extract metadata (tags, labels) for Server image
         id: server-meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: ${{ env.REGISTRY }}/${{ env.SERVER_IMAGE_NAME }}
           tags: |
