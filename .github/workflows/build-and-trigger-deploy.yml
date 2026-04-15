@@ -208,7 +208,7 @@ jobs:
     steps:
       # Creates a release in the repository, using the version number that was generated in the "Get next version" step.
       - name: Create a release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           draft: false
           prerelease: false
